@@ -12,7 +12,7 @@ const {app, BrowserWindow} = require('electron')
           nodeIntegration: true
         }
       })
-
+      mainWindow.setMenuBarVisibility(false);
       mainWindow.loadURL(
         url.format({
           pathname: path.join(__dirname, `/dist/index.html`),
@@ -37,3 +37,4 @@ const {app, BrowserWindow} = require('electron')
     app.on('activate', function () {
       if (mainWindow === null) createWindow()
     })
+    
