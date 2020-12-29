@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 
 import { LoginGuard } from './guards/login.guard';
+import { NotLoginGuard } from './guards/not-login.guard';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { LoginGuard } from './guards/login.guard';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [LoginGuard],
+  providers: [LoginGuard, NotLoginGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

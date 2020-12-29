@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './views/login/login.component';
-import { LoginGuard } from './guards/login.guard';
+import { NotLoginGuard } from './guards/not-login.guard';
 
 const routes: Routes = [
   {
     path: '',
     component: LoginComponent,
-    canActivate: [LoginGuard],
+    canActivate: [NotLoginGuard],
   },
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import(`./views/home-page/home-page.module`).then(module => module.HomePageModule),
-  // },
+  {
+    path: 'home',
+    loadChildren: () => import(`./views/home-page/home-page.module`).then(module => module.HomePageModule),
+  },
   {
     path: '**',
     redirectTo: '',
