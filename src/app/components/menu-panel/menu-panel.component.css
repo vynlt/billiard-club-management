@@ -1,5 +1,3 @@
-
-
 .card {
     margin-bottom: 1.875rem;
     background-color: #fff;
@@ -9,6 +7,7 @@
     border-radius: 20px;
     box-shadow: 0px 12px 23px 0px rgba(62, 73, 84, 0.04);
     height: calc(100% - 30px);
+    max-height: 67px;
 }
 
 .bg-danger {
@@ -45,15 +44,14 @@
 
 @media only screen and (max-width: 1400px){
 .widget-stat .media > span {
-    height: 70px;
-    width: 70px;
-    min-width: 70px;
+    height: 40px;
+    width: 40px;
 }
 }
 
 .widget-stat .media > span {
-    height: 85px;
-    width: 85px;
+    height: 40px;
+    width: 40px;
     border-radius: 50px;
     padding: 10px 12px;
     font-size: 32px;
@@ -75,8 +73,13 @@
     flex: 1;
 }
 
-@media only screen and (max-width: 1400px) {
-.widget-stat .media .media-body p {
-    font-size: 14px;
+
+@media (min-width: 1200px){
+    .col-lg-0-2 {
+        width: 20%;
+    }
 }
+
+.bg-warning {
+    background-color: #ff6d4d !important;
 }
