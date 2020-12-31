@@ -1,0 +1,82 @@
+
+
+.card {
+    margin-bottom: 1.875rem;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border: 0px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 12px 23px 0px rgba(62, 73, 84, 0.04);
+    height: calc(100% - 30px);
+}
+
+.bg-danger {
+    background-color: #f72b50 !important;
+}
+
+.bg-success {
+    background-color: #2bc155 !important;
+}
+
+.bg-info {
+    background-color: #2781d5 !important;
+}
+
+.bg-primary {
+    background-color: #2f4cdd !important;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.widget-stat .media {
+    padding: 0px 0;
+    align-items: center;
+    display: flex;
+}
+
+.widget-stat[class*="bg-"] .media > span {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+}
+
+@media only screen and (max-width: 1400px){
+.widget-stat .media > span {
+    height: 70px;
+    width: 70px;
+    min-width: 70px;
+}
+}
+
+.widget-stat .media > span {
+    height: 85px;
+    width: 85px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #464a53;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.media-body {
+    flex: 1;
+}
+
+@media only screen and (max-width: 1400px) {
+.widget-stat .media .media-body p {
+    font-size: 14px;
+}
+}

@@ -1,5 +1,6 @@
 .table {
     width: 100%;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
     color: #7e7e7e;
     border-collapse: collapse;
@@ -17,8 +18,8 @@
 
 .items-table tbody tr th, .items-table tbody tr td {
     border: 0;
-    padding: 18px 8px;
-    vertical-align: top;
+    padding: 5px 8px;
+    vertical-align: middle;
 }
 
 .font-w500 {
@@ -39,9 +40,35 @@ h4, .h4 {
 }
 
 .row-payment {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 4px 4px 0, 0 -1px rgba(0, 0, 0, 0.25) !important;
 }
 
 .text-secondary {
     color: #3e4954 !important;
+}
+
+.la, .las {
+    font-family: 'Line Awesome Free';
+    font-weight: 900;
+}
+
+.text-danger {
+    color: #f72b50 !important;
+}
+
+.fs-28 {
+    font-size: 28px !important;
+    line-height: 1.4;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+}
+
+.rounded {
+    border-radius: 18px;
+}
+
+.media-body{
+    margin-left: 3px;
 }
